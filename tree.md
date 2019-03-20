@@ -6,6 +6,7 @@
     - [docker安装各服务](/docker/services/index)
         - [docker安装redis](/docker/services/redis)
         - [docker安装mongodb](/docker/services/mongodb)
+        - [docker安装nodejs](/docker/services/nodejs)
 - nginx服务
     - [nginx介绍](/nginx/intro)
     - [nginx安装](/nginx/install)
