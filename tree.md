@@ -3,6 +3,9 @@
     - [docker介绍](/docker/intro)
     - [docker安装](/docker/install)
     - [docker简单例子](/docker/simple_example)
+    - [docker安装各服务](/docker/services/index)
+        - [docker安装redis](/docker/services/redis)
+        - [docker安装mongodb](/docker/services/mongodb)
 - nginx服务
     - [nginx介绍](/nginx/intro)
     - [nginx安装](/nginx/install)
