@@ -42,7 +42,7 @@ Docker 并不在乎你的应用程序是什么、做什么，Docker 提供了一
 
 例如 Docker 只需要一条命令便可以运行 MySQL 数据库：
 
-```bash
+```
 $ docker run -d -p 3306:3306 tutum/mysql。
 ```
 
@@ -90,7 +90,7 @@ API 是应用之间的粘合剂，一个合格开发者肯定使用过别人提�
 
 使用：
 
-```bash
+```
 $ curl http://127.0.0.1:80/posts
 ```
 

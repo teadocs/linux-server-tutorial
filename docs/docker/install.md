@@ -27,7 +27,7 @@ mac安装程序下载链接
 
 启动终端后，通过命令可以检查安装后的 Docker 版本。
 
-```bash
+```
 $ docker --version
 Docker version 17.09.1-ce, build 19e2cf6
 ```
@@ -42,7 +42,7 @@ Docker version 17.09.1-ce, build 19e2cf6
 
 之后我们可以通过 docker info 来查看是否配置成功。
 
-```bash
+```
 $ docker info
 ...
 Registry Mirrors:
@@ -66,57 +66,57 @@ Docker从1.13版本之后采用时间线的方式作为版本号，分为社区�
 
 通过 **uname -r** 命令查看你当前的内核版本
 
-```bash
+```
 $ uname -r
 ```
 
 2、使用 root 权限登录 Centos。确保 yum 包更新到最新。
 
-```bash
+```
 $ sudo yum update
 ```
 
 3、卸载旧版本(如果安装过旧版本的话)
 
-```bash
+```
 $ sudo yum remove docker  docker-common docker-selinux docker-engine
 ```
 
 4、安装需要的软件包， yum-util 提供yum-config-manager功能，另外两个是devicemapper驱动依赖的
 
-```bash
+```
 $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 ```
 
 5、设置yum源
 
-```bash
+```
 $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
 6、可以查看所有仓库中所有docker版本，并选择特定版本安装
 
-```bash
+```
 $ yum list docker-ce --showduplicates | sort -r
 ```
 
 7、安装docker
 
-```bash
+```
 $ sudo yum install docker-ce  #由于repo中默认只开启stable仓库，故这里安装的是最新稳定版17.12.0
 $ sudo yum install <FQPN>  # 例如：sudo yum install docker-ce-17.12.0.ce
 ```
 
 8、启动并加入开机启动
 
-```bash
+```
 $ sudo systemctl start docker
 $ sudo systemctl enable docker
 ```
 
 9、验证安装是否成功(有client和service两部分表示docker安装启动都成功了)
 
-```bash
+```
 $ docker version
 ```
 
